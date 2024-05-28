@@ -45,3 +45,52 @@
   border-radius: 12px;
 }
 
+#banner {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 70%;
+  z-index: 2;
+}
+
+#banner img {
+  height: 100%;
+  width: fit-content;
+}
+
+.shape {
+  background-color: #ffe8b4;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 40% 30% 0% 20%;
+  top: 10;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img,
+  #home .shape {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    padding: 0px 8%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #phone_button button {
+    display: none;
+  }
+}
